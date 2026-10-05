@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North Star Bakery | Contact and Pre-Order</title>
+</head>
+
+<body>
+
+    <header>
+        <img src="bakery-logo.png"
+             alt="North Star Bakery logo"
+             width="250">
+
+        <h1>Contact and Pre-Order</h1>
+
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact and Pre-Order</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Visit North Star Bakery</h2>
+
+            <p>
+                Stop by our neighborhood bakery for fresh breads,
+                pastries, cakes, and other handmade treats.
+            </p>
+
+            <h3>Hours of Operation</h3>
+
+            <p>
+                Monday-Friday: 7:00 a.m.-6:00 p.m.<br>
+                Saturday: 8:00 a.m.-4:00 p.m.<br>
+                Sunday: 8:00 a.m.-2:00 p.m.
+            </p>
+
+            <h3>Location</h3>
+
+            <p>
+                North Star Bakery<br>
+                Neighborhood Main Street<br>
+                Local Community
+            </p>
+        </section>
+
+        <section>
+            <h2>Inquiry and Pre-Order Request</h2>
+
+            <p>
+                Use the form below to ask a general question or request
+                a bakery pre-order.
+            </p>
+
+            <form action="#" method="post">
+
+                <fieldset>
+                    <legend>Contact Information</legend>
+
+                    <p>
+                        <label for="name">Name:</label><br>
+                        <input type="text"
+                               id="name"
+                               name="name"
+                               minlength="2"
+                               required>
+                    </p>
+
+                    <p>
+                        <label for="email">Email:</label><br>
+                        <input type="email"
+                               id="email"
+                               name="email"
+                               required>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Pre-Order or Inquiry Details</legend>
+
+                    <p>
+                        <label for="pickup-date">Pickup Date:</label><br>
+                        <input type="date"
+                               id="pickup-date"
+                               name="pickup-date"
+                               required>
+                    </p>
+
+                    <p>
+                        <label for="request-type">Request Type:</label><br>
+
+                        <select id="request-type"
+                                name="request-type"
+                                required>
+
+                            <option value="">
+                                Select a request type
+                            </option>
+
+                            <option value="pre-order">
+                                Pre-Order
+                            </option>
+
+                            <option value="general-question">
+                                General Question
+                            </option>
+
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="item-details">
+                            Item Details:
+                        </label><br>
+
+                        <textarea id="item-details"
+                                  name="item-details"
+                                  rows="5"
+                                  cols="40"
+                                  minlength="5"
+                                  required></textarea>
+                    </p>
+
+                    <p>
+                        <label for="allergy-notes">
+                            Allergy Notes (if applicable):
+                        </label><br>
+
+                        <textarea id="allergy-notes"
+                                  name="allergy-notes"
+                                  rows="4"
+                                  cols="40"></textarea>
+                    </p>
+
+                </fieldset>
+
+                <p>
+                    <button type="submit">Submit Request</button>
+                </p>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 North Star Bakery. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -61,26 +61,34 @@
                 a bakery pre-order.
             </p>
 
-            <form action="#" method="post">
+            <form id="preorder-form" action="#" method="post" novalidate>
 
                 <fieldset>
                     <legend>Contact Information</legend>
 
                     <p>
                         <label for="name">Name:</label><br>
+
                         <input type="text"
                                id="name"
                                name="name"
                                minlength="2"
                                required>
+
+                        <span id="name-error"
+                              class="error-message"></span>
                     </p>
 
                     <p>
                         <label for="email">Email:</label><br>
+
                         <input type="email"
                                id="email"
                                name="email"
                                required>
+
+                        <span id="email-error"
+                              class="error-message"></span>
                     </p>
                 </fieldset>
 
@@ -89,6 +97,7 @@
 
                     <p>
                         <label for="pickup-date">Pickup Date:</label><br>
+
                         <input type="date"
                                id="pickup-date"
                                name="pickup-date"
@@ -147,6 +156,8 @@
                     <button type="submit">Submit Request</button>
                 </p>
 
+                <p id="form-success"></p>
+
             </form>
         </section>
 
@@ -155,6 +166,8 @@
     <footer>
         <p>&copy; 2026 North Star Bakery. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
